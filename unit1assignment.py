@@ -1,0 +1,25 @@
+import turtle
+turtle.penup()
+turtle.left(180)
+turtle.forward(300)
+turtle.right(180)
+turtle.pendown()
+def makeanoctogan(size,color):
+    turtle.color(color)
+    turtle.begin_fill()
+    for x in range(8):
+        turtle.right(45)
+        turtle.forward(size)
+    turtle.end_fill()
+def penup():
+    turtle.penup()
+    turtle.forward(200)
+    turtle.pendown()
+makeanoctogan(50,"red")
+penup()
+makeanoctogan(50,"yellow")
+penup()
+makeanoctogan(50,"black")
+penup()
+makeanoctogan(50,"pink")
+turtle.exitonclick()
